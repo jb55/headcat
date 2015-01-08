@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then
+  echo "usage: headcat <headerfile> [files...]"
+  exit 1
+fi
+
+HEADFILE="$1"
+
+shift
+
+HEADTMP="$(mktemp)"
+
+[ $# -eq 0 ] && FILES="-" || FILES="$@"
+
+head -n1 < "$HEADFILE" > "$HEADTMP"
+cat $HEADTMP $FILES
+
