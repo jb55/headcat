@@ -5,7 +5,7 @@
 
 ## Installation
 
-  Install with ghi
+  Install with [ghi](https://github.com/stephenmathieson/ghi)
 
     $ ghi install jb55/headcat
 
