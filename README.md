@@ -7,7 +7,7 @@
 
   Install with [ghi](https://github.com/stephenmathieson/ghi)
 
-    $ ghi install jb55/headcat
+    $ ghi jb55/headcat
 
   Install with git+make
 
